@@ -1,7 +1,10 @@
 import express from 'express';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 let app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const date = new Date();
 
 app.get('/year',(req,res) =>{ 
@@ -75,4 +78,4 @@ app.get('/today',(req,res) => {
     res.write(`<h1>${date.toLocaleString()}</h1>`);
     res.end();
 })
-app.listen(PORT,() => console.log('Server is Running in http://localhost:' + PORT));
+app.listen(PORT,() => console.log('Server is Running'));
