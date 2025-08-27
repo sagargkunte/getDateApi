@@ -127,7 +127,6 @@ Use tools like:
 
 - [Postman](https://www.postman.com/)
 - [curl](https://curl.se/)
-- You can also use browser
 - Your browser (navigate to `http://localhost:8000`)
 
 ---
